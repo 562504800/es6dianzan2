@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>html</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+        <div class="zan">
+            <div class="animation">
+                <span  class="hide" id="animation">+1</span>
+            </div>
+            <div class="hand" id="thumb">
+                <div class="arm"></div>
+                <div class="finger1">
+                    <div class="nail">
+                    </div>
+                </div>
+                <div class="finger2">
+                    <div class="nail2">
+                    </div>
+                </div>
+                <div class="finger3">
+                    <div class="nail2">
+                    </div>
+                </div>
+                <div class="finger4">
+                    <div class="nail2">
+                    </div>
+                </div>
+                <div class="finger5">
+                    <div class="nail2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.js"></script>
+    <script src="http://cdn.bootcss.com/systemjs/0.20.2/system.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript">
+    SystemJS.config({
+        baseURL: '/praiseThumb/script'
+    });
+    SystemJS.import('index-es.js').then(function(m) {
+        $.extend({
+                thumb: m.default.Thumb
+            
+        });
+        callBack();
+
+    });
+    function callBack(){
+         var f = new $.thumb(0, $('#thumb'));
+        f.clickAction();
+    }
+    </script>
+</body>
+
+</html>

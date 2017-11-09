@@ -1,0 +1,99 @@
+/*.animation .num {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background: #a8f5ab;
+    line-height: 50px;
+    margin-left: 200px;
+    display: inline-block;
+    text-align: center;
+}*/
+
+.arm {
+    width: 143px;
+    height: 100px;
+    background: #f3bda3;
+    position: relative;
+    top: 144px;
+    left: -143px;
+}
+
+.hand {
+    margin-left: 250px;
+}
+
+.finger1 {
+    width: 73px;
+    height: 30px;
+    background: #f3bda3;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top: 1px solid;
+    -webkit-transform: rotate(-62deg);
+    position: relative;
+    top: -9px;
+    left: 5px;
+}
+
+.finger4,
+.finger2,
+.finger3 {
+    width: 130px;
+    height: 30px;
+    border: 1px solid;
+    border-bottom: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: #f3bda3;
+    border-top-left-radius: inherit;
+}
+
+.finger2 {
+    border-top-left-radius: 15px;
+}
+
+.finger5 {
+    width: 130px;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 15px;
+    background: #f3bda3;
+    border-top-left-radius: none;
+    border-top-left-radius: inherit;
+}
+
+.nail {
+    width: 19px;
+    height: 28px;
+    box-shadow: white;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    box-shadow: 53px 1px 10px #F44336;
+}
+
+.nail2 {
+    width: 26px;
+    height: 27px;
+    box-shadow: white;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    margin-left: 83px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%);
+    position: relative;
+    left: 20px;
+}
+ .num {
+    display: block !important;
+    -webkit-animation: neon 2 1.5s ease-in-out alternate;
+    animation: neon 2 1.5s ease-in-out alternate;
+    -webkit-animation-iteration-count: 1;
+    /* Safari 和 Chrome */
+    font-size: 40px;
+    color: #FF1177;
+    position: absolute;
+    right: 10%;
+    top: 10%;
+}
+.hide{
+    display: none;
+}
